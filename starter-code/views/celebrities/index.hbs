@@ -1,0 +1,21 @@
+<h2>Page Heading</h2>
+<ul>
+{{#each celebs}}
+
+  <a href="/celebrities/{{this._id}}"><li>{{this.name}}</li></a>
+  <form method="post" action="/celebrities/{{this._id}}/delete">
+  <button type="submit" >Delete</button>
+
+    
+</form>
+
+<br>
+<br>
+  <a href="/celebrities/{{this._id}}/edit">edit Celeb</a>
+{{/each}}
+</ul>
+<a href="/celebrities/new">Add new Celeb</a>
+
+<br>
+<br>
+<a href="/movies">Go to movies</a>

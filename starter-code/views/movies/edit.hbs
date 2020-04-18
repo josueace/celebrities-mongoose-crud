@@ -1,0 +1,10 @@
+<h2>Edit Celebrity</h2>
+<form action="/movies/{{movie._id}}" method="POST">
+<label for="title">Movie Title</label>
+<input  id="title" type="text" value="{{movie.title}}" name="title">
+<label for="genre">Movie Genre</label>
+<input  id="genre" type="text" value="{{movie.genre}}" name="genre">
+<label for="plot">Movie Plot</label>
+<input  id="plot" type="text" value="{{movie.plot}}" name="plot">
+<button type="submit"></button>
+</form>
